@@ -1,0 +1,35 @@
+type Query{
+	allBooks:[Book]
+	getBook(bookId:Int):Book
+	
+}
+
+type Mutation{
+	creteBook(book:BookInput):Book
+
+
+}
+
+type Book{
+
+	id:ID!
+	title:String
+	desc:String
+	price:Float
+	author:String
+	pages:Int
+	
+
+}
+
+input BookInput{
+
+	title:String
+	desc:String
+	price:Float
+	author:String
+	pages:Int
+
+}
+
+

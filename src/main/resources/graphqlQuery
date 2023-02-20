@@ -1,0 +1,23 @@
+query{
+    allBooks{
+            id
+            title
+
+    }
+    getBook(bookId:1){
+        title
+    }
+}
+
+mutation{
+    creteBook(book:{
+        title:"dsa5"
+	    desc:"this is a dsa book5"
+	    price:8000.0
+	    author:"vikkey6"
+	    pages:50
+    }){
+        id
+        title
+    }
+}
